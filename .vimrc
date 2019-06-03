@@ -16,7 +16,6 @@ set autoindent
 
 set incsearch
 
-set paste
 " Highlight characters over 80
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
@@ -35,3 +34,14 @@ Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 " Or build from source code
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+
+" Language scripts
+Plug 'sheerun/vim-polyglot'
+
+" Linting/syntax
+Plug 'w0rp/ale'
+
+call plug#end()
+
+" Re-map esc to jj
+imap jj <Esc>
