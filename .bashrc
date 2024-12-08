@@ -7,3 +7,5 @@ function ws {
     tmux split-window -p 10 -t ${1}.0;
     tmux attach -t $1;
 }
+
+alias tmx2=tmux
